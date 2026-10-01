@@ -16,20 +16,24 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val username = findViewById<EditText>(R.id.usernameET)
-        val password = findViewById<EditText>(R.id.passwordET)
+        val usernameET = findViewById<EditText>(R.id.usernameET)
+        val passwordET = findViewById<EditText>(R.id.passwordET)
+
         val btn = findViewById<Button>(R.id.loginBtn)
         val registerBtn = findViewById<TextView>(R.id.registerTV)
 
         // Validation
         btn.setOnClickListener {
+            val username = usernameET.text.toString().trim()
+            val password=  passwordET.text.toString().trim()
+
             // Username must be filled
-            if(username.text.isEmpty()) {
+            if(username.isEmpty()) {
                 Toast.makeText(this, "Username Must not be empty", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             // Password must be filled
-            if(password.text.isEmpty()) {
+            if(password.isEmpty()) {
                 Toast.makeText(this, "Password Must not be empty", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             };
