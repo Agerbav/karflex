@@ -1,4 +1,4 @@
-package com.example.karflex
+package com.example.karflex.data.model
 
 data class Vehicle (
     val id: Int,

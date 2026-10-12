@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity"
+    tools:context=".ui.auth.RegisterActivity"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="28sp">
+    android:padding="28dp">
 
     <ImageView
         android:layout_width="300dp"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Register"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <TextView
