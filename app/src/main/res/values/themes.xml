@@ -1,8 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Karflex" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- pakai Light karena logo KarFlex ada tulisan hitam, kalau dark mode logonya jadi gak kelihatan -->
+    <style name="Base.Theme.Karflex" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/dark</item>
+        <item name="colorOnPrimary">@color/yellow</item>
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorOnSecondary">@color/dark</item>
+        <item name="colorControlActivated">@color/dark</item>
+        <item name="colorSecondaryContainer">@color/yellow</item>
+        <item name="colorOnSecondaryContainer">@color/dark</item>
     </style>
 
     <style name="Theme.Karflex" parent="Base.Theme.Karflex" />
